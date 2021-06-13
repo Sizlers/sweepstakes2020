@@ -1,15 +1,14 @@
 function Team({team}) {
-  const {difference, drawn, lost, plaed, points, scoresAgainst, scoresFor, teamName, won } = team;
-
+  const {difference, drawn, lost, plaed, points, scoresAgainst, scoresFor, teamName, won, person } = team;
   return (
     <div>
-      <p>{teamName}</p>
+      <p>{teamName} - {person}</p>
     </div>
   )
 }
 
 export default function Group({group}) {
-  const {group:title, teams} = group
+  const {group:title, teams} = group.group;
   return (
     <div>
       <h2>{title}</h2>
