@@ -1,0 +1,16 @@
+service: scraper
+package:
+ excludeDevDependencies: false
+plugins:
+ - serverless-plugin-include-dependencies
+frameworkVersion: "2"
+provider:
+ name: aws
+ runtime: nodejs12.x
+ region: eu-west-2
+ lambdaHashingVersion: 20201221
+functions:
+ getGroups:
+  handler: handler.getGroups
+ getMatches:
+  handler: handler.getMatches

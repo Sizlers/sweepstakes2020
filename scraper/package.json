@@ -1,0 +1,21 @@
+{
+ "name": "scraper",
+ "version": "1.0.0",
+ "description": "",
+ "main": "handler.js",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "author": "",
+ "license": "ISC",
+ "dependencies": {
+  "axios": "^0.21.1",
+  "cheerio": "^1.0.0-rc.10",
+  "chrome-aws-lambda": "^7.0.0",
+  "puppeteer-core": "^7.0.3"
+ },
+ "devDependencies": {
+  "puppeteer": "^10.0.0",
+  "serverless-plugin-include-dependencies": "^4.1.0"
+ }
+}
