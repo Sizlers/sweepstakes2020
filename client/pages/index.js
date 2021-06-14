@@ -22,10 +22,20 @@ export async function getStaticProps() {
   const res = await fetch('https://fmv02k9gq4.execute-api.eu-west-2.amazonaws.com/prod/matches')
   const matches = await res.json()
   const {body} = matches;
-  return {
-    props: {
-      body
-    },
-    revalidate: 3600, // In seconds
+  if(body) {
+    return {
+      props: {
+        body
+      },
+      revalidate: 3600, // In seconds
+    }
+  } else {
+    return {
+      props: {
+        body: []
+      },
+      revalidate: 3600, // In seconds
+    }
   }
+
 }
