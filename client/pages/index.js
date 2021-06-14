@@ -2,7 +2,6 @@ import Group from "../components/Group";
 import teamtoperson from '../lib/teamtoperson';
 
 export default function Home({body}) {
-  console.log(body);
   return (
     <main>
       <h1>EUFA sweepstakes</h1>

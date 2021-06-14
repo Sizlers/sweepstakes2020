@@ -2,14 +2,17 @@ import Match from "../components/Match";
 
 export default function MatchPage({body}) {
   return (
-    <main>
-      <h1>Matches</h1>
-      {
-        body.map((match) => (
-          <Match match={match} />
-        ))
-      }
+    <main class="px-10 py-10">
+      <h1 class="text-2xl font-bold">Upcoming Matches</h1>
+      <div>
+        {
+          body.map((match) => (
+            <Match match={match} />
+          ))
+        }
+      </div>
     </main>
+  
   )
 }
 
