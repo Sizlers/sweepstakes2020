@@ -1,5 +1,5 @@
-import Filter from "../components/Filter";
-import Match from "../components/Match";
+import Filter from "/components/Filter";
+import Match from "/components/Match";
 
 export default function Home({body}) {
   return (

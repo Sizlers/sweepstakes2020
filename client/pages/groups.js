@@ -1,6 +1,6 @@
-import Group from "../components/Group";
-import teamtoperson from '../lib/teamtoperson';
-import Filter from "../components/Filter";
+import Group from "/components/Group";
+import teamtoperson from '/lib/teamtoperson';
+import Filter from "/components/Filter";
 
 export default function GroupPage({body}) {
   return (

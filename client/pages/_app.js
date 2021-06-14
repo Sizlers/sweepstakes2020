@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react';
-import { FilterContext } from '../lib/filterContext';
+import { FilterContext } from '/lib/filterContext';
 import 'tailwindcss/tailwind.css'
 import Header from '../components/Header';
 

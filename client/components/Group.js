@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { FilterContext } from "../lib/filterContext";
+import { FilterContext } from "/lib/filterContext";
 
 function Team({team}) {
   const {difference, drawn, lost, played, points, scoresAgainst, scoresFor, teamName, won, person } = team;

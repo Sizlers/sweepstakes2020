@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { FilterContext } from "../lib/filterContext";
-import teamtoperson from "../lib/teamtoperson";
+import { FilterContext } from "/lib/filterContext";
+import teamtoperson from "/lib/teamtoperson";
 
 export default function Match({match}) {
   const {filters} = useContext(FilterContext);
