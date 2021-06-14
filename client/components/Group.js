@@ -6,9 +6,9 @@ function Team({team}) {
 
   const {filters} = useContext(FilterContext);
 
-  if(!filters.includes(person) && filters?.length) {
+  if(!filters.includes(person) && filters?.length) 
     return null;
-  }
+  
 
   return (
     <div className="border-2 lg:my-4 p-4 pb-10">
