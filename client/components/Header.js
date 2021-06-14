@@ -6,8 +6,8 @@ export default function Header() {
   return (
     <header class="py-4 flex border-b">
       <ul class="flex content-between w-60 m-auto">
-        <li class="w-1/2 text-center text-xl"><Link href="/"><a class={router.pathname == "/" ? "underline text-purple-600" : "underline"}>Groups</a></Link></li>
-        <li class="w-1/2 text-center text-xl"><Link href="/matches"><a class={router.pathname == "/matches" ? "underline text-purple-600" : "underline"}>Matches</a></Link></li>
+        <li class="w-1/2 text-center text-xl"><Link href="/"><a class={router.pathname == "/" ? "underline text-purple-600" : "underline"}>Matches</a></Link></li>
+        <li class="w-1/2 text-center text-xl"><Link href="/groups"><a class={router.pathname == "/groups" ? "underline text-purple-600" : "underline"}>Groups</a></Link></li>
       </ul>
     </header>
   )

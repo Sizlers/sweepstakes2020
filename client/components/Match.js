@@ -1,6 +1,9 @@
+import { useContext } from "react";
+import { FilterContext } from "../lib/filterContext";
 import teamtoperson from "../lib/teamtoperson";
 
 export default function Match({match}) {
+  const {filters} = useContext(FilterContext);
   const {date, location, name, url} = match;
 
   const teamOne = name.split('-')[0];
@@ -28,6 +31,11 @@ export default function Match({match}) {
     return null
   }
 
+  if(!filters.includes(resultOne?.person) && !filters.includes(resultOne?.person) && filters?.length) {
+    return null;
+  }
+
+
   const matchTime = Date.parse(date);
   const matchTimeUK = new Date(matchTime);
   const matchEnd = new Date(matchTimeUK.setHours( matchTimeUK.getHours() + 2 ))
@@ -47,8 +55,6 @@ export default function Match({match}) {
   if(matchTime < Date.now()) {
     return null
   }
-
-
 
   return (
     <div class="mt-5 py-5 border-b">
